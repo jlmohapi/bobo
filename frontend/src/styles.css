@@ -1,0 +1,185 @@
+/* Handsome Custom Styles for LUCT Reporting App */
+
+body {
+  background: linear-gradient(135deg, #2c3e50 0%, #c51c70 100%);
+  min-height: 100vh;
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ecf0f1;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  background: #c7cbcf;
+  color: #ecf0f1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #3498db, #2980b9);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #2980b9, #21618c);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+.btn-secondary {
+  background: linear-gradient(45deg, #e74c3c, #c0392b);
+  border: none;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(45deg, #c0392b, #a93226);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+}
+
+.btn-outline-success {
+  border-color: #27ae60;
+  color: #27ae60;
+  background: transparent;
+}
+
+.btn-outline-success:hover {
+  background: #27ae60;
+  border-color: #27ae60;
+  color: white;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 2px solid #7f8c8d;
+  background: #2c3e50;
+  color: #ecf0f1;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+  background: #34495e;
+}
+
+.form-control::placeholder {
+  color: #bdc3c7;
+}
+
+.nav {
+  background: rgba(44, 62, 80, 0.8);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.nav a {
+  color: #ecf0f1 !important;
+  font-weight: 500;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #3498db !important;
+}
+
+.nav button {
+  background: transparent;
+  border: 1px solid #ecf0f1;
+  color: #ecf0f1;
+  transition: all 0.3s ease;
+}
+
+.nav button:hover {
+  background: #e74c3c;
+  border-color: #e74c3c;
+}
+
+h1 {
+  color: #ecf0f1;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+h5 {
+  color: #ecf0f1;
+  font-weight: 700;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.border {
+  border: 1px solid #7f8c8d !important;
+  border-radius: 8px !important;
+}
+
+.text-success {
+  color: #27ae60 !important;
+  font-weight: 600;
+}
+
+.text-danger {
+  color: #e74c3c !important;
+  font-weight: 600;
+}
+
+select {
+  background: #2c3e50;
+  color: #ecf0f1;
+  border: 2px solid #7f8c8d;
+  border-radius: 8px;
+}
+
+select option {
+  background: #34495e;
+  color: #ecf0f1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav a {
+    margin: 5px 0;
+  }
+
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .me-2 {
+    margin-right: 0 !important;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
